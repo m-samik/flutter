@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 
 main(){
-  var x = Text(
+ runApp(myapp());
+}
+
+myapp(){
+var x = Text(
     'Hello World',
     textDirection: TextDirection.ltr,
     textAlign: TextAlign.center,);
-  runApp(x);
+  var design = MaterialApp(
+    home:x,);
+// Return returns the app and shows the exact design we created.
+  return design;
 }
